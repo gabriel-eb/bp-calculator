@@ -1,4 +1,6 @@
-<h1>Series Summation!</h1>
+{% from '_components.html' import nextButton with context %}
+
+<h2 class="text-4xl">Series Summation!</h2>
 
 Function to sum: <input
     class="border"
@@ -13,3 +15,5 @@ Function to sum: <input
 <p class="mt-2">Lower limit: <input type="number" name="lower-lim" id="lower-lim" class="border"></p>
 <br>
 <p class="mt-2">Upper limit: <input type="number" name="upper-lim" id="upper-lim" class="border"></p>
+<br>
+{{nextButton("→")}}

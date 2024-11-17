@@ -5,6 +5,21 @@ __pycache__/
 .coverage.*
 htmlcov/
 docs/_build/
+.venv/
+
+*.pyc
+__pycache__/
+
+instance/
+
+.pytest_cache/
+.coverage
+htmlcov/
+
+dist/
+build/
+*.egg-info/
+
 
 # Byte-compiled / optimized / DLL files
 __pycache__/

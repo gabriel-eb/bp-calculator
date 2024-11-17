@@ -1,0 +1,12 @@
+<h3>User input: {{input}}</h3>
+<h3>User input (const): {{constant}}</h3>
+<h3>Result:</h3>
+{% if err %}
+    <p>Error parsing input!</p>
+{% else %}
+    <span id="result">{{res}}</span>
+{% endif %}
+
+<script>
+    katex.render("{{ res }}", document.getElementById('result'));
+</script>

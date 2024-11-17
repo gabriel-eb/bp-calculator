@@ -1,5 +1,8 @@
+{% from '_components.html' import nextButton with context %}
+
 <h2 class="text-4xl">Derivative!</h2>
-<p>
+<form
+>
   I want to know the derivative of
   <input
     class="border"
@@ -16,4 +19,10 @@
     name="derivative-constant"
     id="derivative-constant"
   />.
-</p>
+  {{nextButton(
+    "→",
+    "/derivative",
+    "#op-result",
+    "#derivative-input, #derivative-constant"
+  )}}
+</form>

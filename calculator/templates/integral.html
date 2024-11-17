@@ -1,4 +1,6 @@
-<h1>Integrals!</h1>
+{% from '_components.html' import nextButton with context %}
+
+<h2 class="text-4xl">Integrals!</h2>
 I want to know the integral of
 <input
   type="text"
@@ -12,3 +14,4 @@ from lower limit
 limit
 <input type="number" name="upper-lim" id="upper-lim" class="border" /> where the
 vairable is <input type="text" name="variable" id="variable" class="border" />.
+{{nextButton("→")}}

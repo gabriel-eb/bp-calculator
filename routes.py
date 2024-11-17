@@ -6,6 +6,7 @@ class Routes(Enum):
     FINITE = 'finite-sum'
     INFINITE = 'infinite-sum'
     MAINMENU = 'main-menu'
+    OPERATION = 'operation'
     
 calc_options = [
     Routes.DERIVATIVE.value,
